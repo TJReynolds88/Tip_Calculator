@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -21,39 +20,37 @@
             </header>
             <div>
                 <div class="screen">
-                    <form>
                         <div>
                             <label for="Total of Bill">Total</label>
-                            <input type="number" min="0" step="any" id="total" name="Bill_Total" value="">
+                            <input type="number" min="0" step="any" id="total" name="total">
 
                         </div>
                         <div>
-                            <input type="radio" id="louie" name="tip" value="15">
+                            <input type="radio" name="tipPercent" value="15">
                             <label for="louie">15%</label>
                         </div>
                         <div>
-                            <input type="radio" id="louie" name="tip" value="18">
+                            <input type="radio" name="tipPercent" value="18">
                             <label for="louie">18%</label>
                         </div>
                         <div>
-                            <input type="radio" id="louie" name="tip" value="20">
+                            <input type="radio" name="tipPercent" value="20">
                             <label for="louie">20%</label>
                         </div>
-                    </form>
                 </div>
                 <div class="display">
                     <p>Tip Amount</p>
-                    <p><strong>$0.00</strong></p>
+                    <p id="amountOfTip"><strong>$0.00</strong></p>
                     <p>TOTAL</p>
-                    <p><strong>$0.00</strong></p>
+                    <p id="yourCost"><strong>$0.00</strong></p>
                 </div>
-                <button>reset</button>
+                <button type="button" onclick="getInputValue();">reset</button>
             </div>
         </div>
 
 
     </div>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

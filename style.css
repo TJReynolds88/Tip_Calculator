@@ -96,3 +96,76 @@ body{
   .slider.round:before {
     border-radius: 50%;
   }
+
+
+.screen{
+      background-color: #28255a;
+      margin: 10px;
+      border-radius: 10px;
+      color: #ccc;
+      display: grid;
+      grid-template-areas: 
+      "total, total",
+      "15 18 20";
+  }
+  
+
+  label{
+      grid-area: total;
+  }
+  input#total{
+      grid-area: total;
+  }
+
+
+
+  .display{
+      border: solid 2px #ed66b2;
+      border-radius: 10px;
+      margin: 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  button {
+      position: relative;
+      bottom: 0;
+      background-color: #28255a;
+      color: white;
+      width: 280px;
+      border-radius: 5px;
+      height: 40px;
+      margin: 10px;
+      border: none;
+      align-items: center;
+  }
