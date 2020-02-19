@@ -1,6 +1,13 @@
+//Onload put focus on input
+document.getElementById("total").addEventListener("load", ready() );
+
+function ready() {
+  document.getElementById("total").focus();
+}
 // Get $ Total 
 function getInputValue() {
   var inputVal = document.getElementById("total").value;
+
   radioValue(inputVal);
 }
 
@@ -17,3 +24,4 @@ function radioValue(inputVal){
     document.getElementById("yourCost").innerHTML = costOfFinalBill; 
   }
 }
+
