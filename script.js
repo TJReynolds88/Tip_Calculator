@@ -19,9 +19,9 @@ function radioValue(inputVal){
     if(percent[i].checked)
     var tip = inputVal * percent[i].value;
     totalTip = tip / 100;
-    document.getElementById("amountOfTip").innerHTML = totalTip;
-    var costOfFinalBill = totalTip += inputVal;
-    document.getElementById("yourCost").innerHTML = costOfFinalBill; 
+    document.getElementById("amountOfTip").innerHTML =  (Math.round(totalTip * 100) / 100).toFixed(2);;
+    var costOfFinalBill = Number(totalTip) + Number(inputVal);
+    document.getElementById("yourCost").innerHTML =  (Math.round(costOfFinalBill * 100) / 100).toFixed(2);; 
   }
 }
 
