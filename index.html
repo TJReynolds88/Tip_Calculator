@@ -13,28 +13,24 @@
         <div class="calculator">
             <header>
                 <h1>Tip Calculator</h1>
-                <label class="switch">
-                    <input type="checkbox" checked>
-                    <span class="slider round"></span>
-                </label>
             </header>
             <div>
                 <div class="screen">
                         <div>
                             <label for="Total of Bill">Total</label>
-                            <input type="number" min="0" step="any" id="total" name="total">
-
+                            <input type="number" min="0" step="any" id="total" name="total" placeholder="$10.00">
+                            <br>
                         </div>
                         <div>
-                            <input type="radio" name="tipPercent" value="15" checked>
+                            <input class="percentage"  type="radio" name="tipPercent" value="15" checked>
                             <label for="louie">15%</label>
                         </div>
                         <div>
-                            <input type="radio" name="tipPercent" value="18">
+                            <input  class="percentage" type="radio" name="tipPercent" value="18">
                             <label for="louie">18%</label>
                         </div>
                         <div>
-                            <input type="radio" name="tipPercent" value="20">
+                            <input  class="percentage" type="radio" name="tipPercent" value="20">
                             <label for="louie">20%</label>
                         </div>
                 </div>
@@ -44,7 +40,7 @@
                     <p>TOTAL</p>
                     <p id="yourCost"><strong>$0.00</strong></p>
                 </div>
-                <button type="button" onclick="getInputValue();">reset</button>
+                <button type="button" onclick="getInputValue();">Submit</button>
             </div>
         </div>
 

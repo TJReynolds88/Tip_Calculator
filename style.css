@@ -37,65 +37,7 @@ body{
       align-items: baseline;
   }
 
-  /* Slider */
-  .switch {
-    position: relative;
-    width: 40px;
-    height: 22px;
-  }
   
-  .switch input { 
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 16px;
-    width: 16px;
-    left: 3px;
-    bottom: 3px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  input:checked + .slider {
-    background-color: #2196F3;
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(18px);
-    -ms-transform: translateX(18px);
-    transform: translateX(18px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
 
 
 .screen{
@@ -103,58 +45,42 @@ body{
       margin: 10px;
       border-radius: 10px;
       color: #ccc;
-      display: grid;
-      grid-template-areas: 
-      "total, total",
-      "15 18 20";
+      padding-left: 10px;
+      min-height: 75px;
   }
   
 
-  label{
-      grid-area: total;
+  .screen div{
+    display: inline;
+    padding-left: 20px;
+
   }
   input#total{
-      grid-area: total;
+      outline: none;
+      border-radius: 5px;
+      background-color: #a18cd1;
+      color: rgb(226, 222, 222);
+      padding: 5px;
+      margin-top: 5px;
+  
   }
 
+  input[type=number] {
+    -webkit-appearance: none;
+  }
 
+  input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
   .display{
       border: solid 2px #ed66b2;
       border-radius: 10px;
       margin: 10px;
+      padding-left: 20px;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   button {
@@ -168,4 +94,5 @@ body{
       margin: 10px;
       border: none;
       align-items: center;
+      font-size: 1.25rem;
   }
